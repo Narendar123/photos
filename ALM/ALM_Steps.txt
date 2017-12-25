@@ -1,0 +1,161 @@
+
+==========================================================
+  Steps in HP ALM for Exporting Excel Test Cases to ALM 
+=========================================================
+
+ ALM - Application Life Cycle Management 
+     - Vendor ( HP)
+     - Version (11.5)
+     - Previous Name for ALM ( Quality Center - QC )
+
+  Step I :
+  Open IE Browser and Enter ALM Server URL : http://almserver:8080/qcbin and click on GO.
+
+  Step II :
+  Click on ALM link ( FIrst Link ) and wait for some time ( Because ALM Server is going communciate with Database )
+
+ 
+  Step III :
+   Enter Login Name : Tester User name and No Password and click on Authenticate button.
+
+  Step IV :
+  Observer Which Project We Belongs to.. I.e Domain ( E-Commerce ) and Project ( NetBiz)
+  and click on Login button.
+
+  Step V:
+   Wait for some time to logging into project..
+   Observer Domain,Project and UserName in top right corner of the ALM Homepage..
+
+  Step VI:
+  	Modules :
+
+  A.Requriments  ( Req assigned to Tester ) ex: HOME_GUI
+  B.Testing
+     1. Test Plan   ( Planning of Our Test Cases and Export from Microsoft Excel to HP ALM )
+     2. Test Lab    ( Executing of our Test Cases either pass or failed)
+
+  C.Defects     ( When Expected Result is not matching with Actal Result )
+
+
+  Step VII:
+  Go to Req Modules
+    1. Goto Sub Module and Double click on it. ( Req Module)
+    2. Req -> Project -> Module ->Req Assigned to you...( HOME_GUI)
+
+  Step VIII:
+   1. We Need to Prepare Test Cases for HomePage with GUI Testing 
+   2. We Need to Write your Name in the following fields :
+       a. TCD Created By 
+       b. TCD Name
+       c. QC path/ Subject 	
+
+ Step IX:
+ 1. We Need to know which column contains what?
+   Column Names ( Microsoft Excel)      :  Column ID      Column Names ( HP ALM)
+  Test Secnario Name			: A                   NA
+  Test Case ID				: B                   NA
+  Test Case Name 			: C          Test Name ( Mandatory )
+ Test Case Description 			: D	     Description
+ Step Name 				: E          Step Name ( Design steps )
+ Step Name Description 			: F	     Description (Design steps )
+ Expected Result 			: G	     Expected   (Design steps )
+ Actual Result 				: H 		      NA
+Result 					: I 		      NA
+Priority				: J	              NA
+QC Path or Subject			: K          Subject ( Mandatory )
+Test Type				: L	     Type ( Mandatory )
+
+Step X: 
+1. Select Our Test Case Area from Column ID ( A to L )
+2.  CLick on Add-in Tab in Menu Bar
+3. Export to HP ALM 
+   a. Enter ALM Server URL : http://almsever:8080/qcbin and click on Next 
+   b. Enter User Name as TesterName and No password and click on Next
+   c. Ensure your Domain Name and Project Name as assgined for you.. and click on Next
+   d. Select which type data we going to export to HP Alm . Here Test Cases ( Selecting Test Radio Button) and click on Next 
+   e. We Need to map your columns in Excel to HP ALM .. Here Need to Enter Map Name as : HOME_GUI and click on Next
+   f.  After sucessful Mapping our columns with HP ALM . click on Export.
+   g. We need to get Confirmtion Window a Our Test Cases are exported to HP ALM from Microsoft Excel. and click on Finish
+
+ Step XI:
+1. Click on Testing Module
+2. Click on Test Plan sub module
+3. Expand your test plan tree as Subject -> NetBiz -> Services -> Your Name( After Exporting your Name will appear in Test Plan )
+4. We need to Ensure your test case uploaded to ALM or not with Desgin steps too
+5.  Click on Design steps tab 
+
+Step XII: 
+(Here Req means Requirment )
+1.  Requiment Traciabilty Matrix ( HOME_GUI) 
+   a. Go to Req Module 
+  b. Go  to Req Sub module
+ c. Expand your Req tree upto req 
+ d. Select Req and Right click on Req 
+ e. Select Req Deatils
+f. Select Test Coverage link in Left Side ( Umberalla Icon)
+g. Click on Select Icon ( Umberalla Icon)
+h. Testplan tree will opened in right most side 
+i. Select out Test case from Test plan tree (Subject -> NetBiz -> Services -> Your Name) and Click on Left Arrow
+j. Observer out Test Case is added to Coverage Type or not.. default : No Run
+k. CLick on Ok..
+
+
+ Step XIII:
+
+
+  
+
+
+	
+
+
+
+  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+  
